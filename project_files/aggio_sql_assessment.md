@@ -87,7 +87,10 @@ from (
 ) r;
 
 /*
-Comment on the above solution. The outer query is not necessary. I've included it so that if we need to insert fields in the future, we can uncomment the fields and there they will be. Otherwise, you have to change the numbering in group by.
+Comment on the above solution. The outer query is not necessary.
+I've included it so that if we need to insert fields in the future,
+we can uncomment the fields and there they will be. Otherwise, you
+have to change the numbering in group by.
 */
 ```
 <br />
@@ -96,9 +99,13 @@ Comment on the above solution. The outer query is not necessary. I've included i
 
 ```SQL
 /*
-First, as I've noted above, I'm using postgres. Here I see that I'm not told much about the etl_log table and I will have to think of all of the common attributes that files may have that may be important. I will describe my thinking process here using assumptions.
+First, as I've noted above, I'm using postgres. Here I see that
+I'm not told much about the etl_log table and I will have to think
+of all of the common attributes that files may have that may be
+important. I will describe my thinking process here using assumptions.
 
-We're dealing with files, possibly at an ingestion point. We would probably want to know the following attributes of the incoming files:
+We're dealing with files, possibly at an ingestion point. We would
+probably want to know the following attributes of the incoming files:
 
     - file_id
     - file_hash
@@ -109,7 +116,8 @@ We're dealing with files, possibly at an ingestion point. We would probably want
     - binary_flag
     - received_datetime
 
-We could possibly have many other attributes. It all depends on what the need is and the purpose of the log.
+We could possibly have many other attributes. It all depends on what
+the need is and the purpose of the log.
 
 Here is how I would create this table.
 */
