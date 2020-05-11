@@ -1,4 +1,4 @@
-## Aggio SQL Assessment
+## SQL Assessment from 2020-01-21
 
 #### Let's suppose you have the following tables in PostgreSQL.
 
